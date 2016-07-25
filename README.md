@@ -6,7 +6,7 @@ Debian Docker image with mosquitto 1.4.9, compiled with websockets activated and
 
 ## Run
 
-    docker run -ti -p 1883:1883 -p 9001:9001 simplx/mosquitto
+    docker run -ti -p 1883:1883 -p 9001:9001 simplx/mosquitto-auth
 
 Exposes Port 1883 (MQTT) 9001 (Websocket MQTT)
 
@@ -16,8 +16,8 @@ Volumes: /mqtt/config, /mqtt/data and /mqtt/log
 
 ## Build
 
-    git clone https://github.com/toke/docker-mosquitto.git
-    cd docker-mosquitto
+    git clone https://github.com/simplx-fr/docker-mosquitto-auth.git
+    cd docker-mosquitto-auth
     docker build .
 
 ## Authors and license
